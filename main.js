@@ -329,6 +329,7 @@ if (form) {
     const phone = document.getElementById("phone").value.trim();
     const product = document.getElementById("product").value.trim();
     const city = document.getElementById("city").value.trim();
+    const country = document.getElementById("country").value.trim(); // NEW
     const notes = document.getElementById("notes").value.trim();
     const consent = document.getElementById("consent").checked;
 
@@ -337,52 +338,28 @@ if (form) {
 
     let valid = true;
     if (!name) {
-      setErr(
-        "name",
-        lang === "fr"
-          ? "Entrez le nom"
-          : lang === "en"
-          ? "Enter name"
-          : "من فضلك اكتب الاسم"
-      );
+      setErr("name", lang==="fr" ? "Entrez le nom" : lang==="en" ? "Enter name" : "من فضلك اكتب الاسم");
       valid = false;
     }
     if (!phone) {
-      setErr(
-        "phone",
-        lang === "fr"
-          ? "Entrez le téléphone"
-          : lang === "en"
-          ? "Enter phone"
-          : "أدخل الهاتف"
-      );
+      setErr("phone", lang==="fr" ? "Entrez le téléphone" : lang==="en" ? "Enter phone" : "أدخل الهاتف");
       valid = false;
     }
     if (!product) {
-      setErr(
-        "product",
-        lang === "fr"
-          ? "Entrez le produit"
-          : lang === "en"
-          ? "Enter product"
-          : "أدخل نوع المنتج"
-      );
+      setErr("product", lang==="fr" ? "Entrez le produit" : lang==="en" ? "Enter product" : "أدخل نوع المنتج");
+      valid = false;
+    }
+    if (!country) { // NEW
+      setErr("country", lang==="fr" ? "Entrez le pays" : lang==="en" ? "Enter country" : "أدخل الدولة");
       valid = false;
     }
     if (!consent) {
-      setErr(
-        "consent",
-        lang === "fr"
-          ? "Acceptez le contact"
-          : "en" === lang
-          ? "Please accept contact"
-          : "الرجاء الموافقة"
-      );
+      setErr("consent", lang==="fr" ? "Acceptez le contact" : lang==="en" ? "Please accept contact" : "الرجاء الموافقة");
       valid = false;
     }
     if (!valid) return;
 
-    const wa = buildWhatsAppLink({ name, phone, product, city, notes }, lang);
+    const wa = buildWhatsAppLink({ name, phone, product, city, country, notes }, lang); // include country
     window.open(wa, "_blank", "noopener");
 
     const res = document.getElementById("form-result");
@@ -397,6 +374,7 @@ if (form) {
     form.reset();
   });
 }
+
 
 // ===== Language Switcher =====
 // Language switcher (select)

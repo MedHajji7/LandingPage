@@ -1,14 +1,14 @@
 // ===== CONFIG =====
-const WHATSAPP_NUMBER = "212708180292"; 
+const WHATSAPP_NUMBER = "212708180292";
 const DEFAULT_LANG = "ar"; // "ar" | "en" | "fr"
 
-// ===== Translations (keep it short & focused) =====
+// ===== TRANSLATIONS =====
 const I18N = {
   ar: {
     dir: "rtl",
     lang: "ar",
 
-    // NAV (kept for completeness; you removed the nav UI)
+    // NAV (kept for completeness; nav UI removed)
     nav_services: "الخدمات",
     nav_process: "خطوات العمل",
     nav_testimonials: "آراء العملاء",
@@ -25,7 +25,7 @@ const I18N = {
     // SERVICES
     services_title: "لماذا نحن؟",
     s1_title: "توريد وبحث موثوق",
-    s1_desc:"نبحث عن المورّدين المناسبين ونتفاوض على أفضل الشروط وفق مواصفاتكم.",
+    s1_desc: "نبحث عن المورّدين المناسبين ونتفاوض على أفضل الشروط وفق مواصفاتكم.",
     s2_title: "فحص الجودة قبل الشحن",
     s2_desc: "تقارير AQL مع صور وفيديو لضمان المطابقة قبل خروج الشحنة.",
     s3_title: "شحن وتتبع واضح",
@@ -48,7 +48,7 @@ const I18N = {
     testimonials_title: "آراء العملاء",
     t1_text: "“تعامل احترافي وتواصل واضح. وصلت البضاعة كما هو متفق.”",
     t1_meta: "كريم، الرباط",
-    t2_text:"“ساعدونا في إيجاد مورّد أفضل بجودة ممتازة، وكان التسليم في الموعد.”",
+    t2_text: "“ساعدونا في إيجاد مورّد أفضل بجودة ممتازة، وكان التسليم في الموعد.”",
     t2_meta: "سلمى، فاس",
     t3_text: "“فحص ما قبل الشحن منحني راحة بال. شكرًا على الخدمة.”",
     t3_meta: "يوسف، مراكش",
@@ -64,48 +64,53 @@ const I18N = {
 
     // CONTACT / FORM
     contact_title: "لنبدأ العمل",
-    contact_sub:"من دون أسعار علنية أو تفاصيل مطوّلة — املأ النموذج المختصر، وسنفتح واتساب برسالة جاهزة.",
+    contact_sub: "من دون أسعار علنية أو تفاصيل مطوّلة — املأ النموذج المختصر، وسنفتح واتساب برسالة جاهزة.",
     f_name_label: "الاسم الكامل *",
     f_phone_label: "هاتف/واتساب *",
     f_product_label: "نوع المنتج *",
     f_city_label: "المدينة",
+    f_country_label: "الدولة *",
     f_notes_label: "ملاحظة (اختياري)",
     f_consent: "أوافق على التواصل عبر واتساب/البريد الإلكتروني *",
     f_submit: "إرسال الطلب",
     f_required: "* حقول مطلوبة",
-    f_country_label: "الدولة *",
 
     // FOOTER
     footer_tag: "توريد موثوق، فحص جودة، شحن وجمارك — تواصل بسيط عبر واتساب.",
     footer_whatsapp: "واتساب:",
     footer_email: "البريد الإلكتروني:",
   },
+
   en: {
     dir: "ltr",
     lang: "en",
+
+    // NAV
     nav_services: "Services",
     nav_process: "Process",
     nav_testimonials: "Testimonials",
     nav_faq: "FAQ",
     nav_contact: "Contact",
+
+    // HERO
     hero_title: "Trusted sourcing from China to anywhere in the world",
     hero_sub: "From supplier to your door — sourcing, QC, shipping, customs.",
     cta_start: "Get started",
     cta_whatsapp: "WhatsApp Now",
     trustline: "✓ Pre-shipment QC • ✓ Tracking • ✓ Customs",
-    trust_qc: "Pre-shipment QC (AQL)",
-    trust_tracking: "Step-by-step tracking",
-    trust_customs: "Customs support",
-    trust_reports: "Photo/Video reports",
+
+    // SERVICES
     services_title: "Why us?",
     s1_title: "Reliable sourcing & negotiation",
-    s1_desc:"We find the right suppliers and negotiate terms to match your specs.",
+    s1_desc: "We find the right suppliers and negotiate terms to match your specs.",
     s2_title: "Quality control before shipment",
     s2_desc: "AQL reports with photos/videos to ensure conformity.",
     s3_title: "Clear shipping & tracking",
     s3_desc: "Sea/Air coordination + updates until delivery.",
     s4_title: "Customs & paperwork",
     s4_desc: "We help with documents to avoid delays.",
+
+    // PROCESS
     process_title: "Process",
     p1_title: "Quick contact",
     p1_desc: "WhatsApp or form — we capture product, quantity, city.",
@@ -115,13 +120,17 @@ const I18N = {
     p3_desc: "We follow production and perform pre-shipment QC.",
     p4_title: "Shipping & delivery",
     p4_desc: "Logistics + customs until your door.",
+
+    // TESTIMONIALS
     testimonials_title: "What clients say",
-    t1_text:"“Professional and clear communication. Goods arrived with no issues.”",
+    t1_text: "“Professional and clear communication. Goods arrived with no issues.”",
     t1_meta: "— Rachid, Casablanca",
-    t2_text:"“They found a better supplier with great quality. Delivery on time.”",
+    t2_text: "“They found a better supplier with great quality. Delivery on time.”",
     t2_meta: "— Amine, Tangier",
     t3_text: "“QC before shipment gave me peace of mind. Thank you.”",
     t3_meta: "— Mariam, Agadir",
+
+    // FAQ
     faq_title: "Quick FAQ",
     q1: "Typical lead time China → Morocco?",
     a1: "Usually 30–40 days depending on product, mode, and customs.",
@@ -129,47 +138,56 @@ const I18N = {
     a2: "Yes, LCL works well for small/test orders.",
     q3: "How do I track my order?",
     a3: "We share updates and photos at each stage until delivery.",
+
+    // CONTACT / FORM
     contact_title: "Get started",
-    contact_sub:"No public pricing or long details — fill the short form and we’ll open WhatsApp with a ready message.",
+    contact_sub: "No public pricing or long details — fill the short form and we’ll open WhatsApp with a ready message.",
     f_name_label: "Full name *",
     f_phone_label: "Phone/WhatsApp *",
     f_product_label: "Product type *",
     f_city_label: "City",
+    f_country_label: "Country *",
     f_notes_label: "Note (optional)",
     f_consent: "I agree to be contacted via WhatsApp/email *",
     f_submit: "Send request",
-    f_country_label: "Country *",
     f_required: "* required fields",
-    footer_tag:"Reliable sourcing, QC, shipping & customs — simple WhatsApp contact.",
+
+    // FOOTER
+    footer_tag: "Reliable sourcing, QC, shipping & customs — simple WhatsApp contact.",
     footer_whatsapp: "WhatsApp:",
     footer_email: "Email:",
   },
+
   fr: {
     dir: "ltr",
     lang: "fr",
+
+    // NAV
     nav_services: "Services",
     nav_process: "Processus",
     nav_testimonials: "Témoignages",
     nav_faq: "FAQ",
     nav_contact: "Contact",
+
+    // HERO
     hero_title: "Approvisionnement fiable de la Chine vers le monde entier",
-    hero_sub:"Du fournisseur à votre porte — sourcing, contrôle qualité, expédition, douane.",
+    hero_sub: "Du fournisseur à votre porte — sourcing, contrôle qualité, expédition, douane.",
     cta_start: "Commencer",
     cta_whatsapp: "WhatsApp Direct",
     trustline: "✓ QC avant expédition • ✓ Suivi • ✓ Douane",
-    trust_qc: "QC avant expédition (AQL)",
-    trust_tracking: "Suivi par étapes",
-    trust_customs: "Support douanier",
-    trust_reports: "Rapports Photo/Vidéo",
+
+    // SERVICES
     services_title: "Pourquoi nous ?",
     s1_title: "Sourcing & négociation fiables",
-    s1_desc:"Nous trouvons les bons fournisseurs et négocions selon vos specs.",
+    s1_desc: "Nous trouvons les bons fournisseurs et négocions selon vos specs.",
     s2_title: "Contrôle qualité avant expédition",
     s2_desc: "Rapports AQL avec photos/vidéos pour garantir la conformité.",
     s3_title: "Expédition & suivi clairs",
     s3_desc: "Mer/Air + mises à jour jusqu’à la livraison.",
     s4_title: "Documents & douane",
     s4_desc: "Aide aux formalités pour éviter les retards.",
+
+    // PROCESS
     process_title: "Processus",
     p1_title: "Contact rapide",
     p1_desc: "WhatsApp ou formulaire — produit, quantité, ville.",
@@ -179,13 +197,17 @@ const I18N = {
     p3_desc: "Suivi de production et QC avant expédition.",
     p4_title: "Expédition & livraison",
     p4_desc: "Logistique + douane jusqu’à chez vous.",
+
+    // TESTIMONIALS
     testimonials_title: "Avis clients",
     t1_text: "« Pro et clair, marchandise reçue sans souci. »",
     t1_meta: "— Rachid, Casablanca",
-    t2_text:"« Meilleur fournisseur trouvé, bonne qualité, livraison à l’heure. »",
+    t2_text: "« Meilleur fournisseur trouvé, bonne qualité, livraison à l’heure. »",
     t2_meta: "— Amine, Tanger",
     t3_text: "« Le QC avant expédition m’a rassuré. Merci. »",
     t3_meta: "— Mariam, Agadir",
+
+    // FAQ
     faq_title: "FAQ rapide",
     q1: "Délais typiques Chine → Maroc ?",
     a1: "Généralement 30–40 jours selon produit, mode et douane.",
@@ -193,37 +215,37 @@ const I18N = {
     a2: "Oui, LCL convient aux petits tests.",
     q3: "Comment suivre ma commande ?",
     a3: "Mises à jour et photos à chaque étape jusqu’à la livraison.",
+
+    // CONTACT / FORM
     contact_title: "On démarre",
-    contact_sub:"Pas de tarifs publics ni de longs détails — remplissez le mini-formulaire, on ouvre WhatsApp avec le message prêt.",
+    contact_sub: "Pas de tarifs publics ni de longs détails — remplissez le mini-formulaire, on ouvre WhatsApp avec le message prêt.",
     f_name_label: "Nom complet *",
     f_phone_label: "Téléphone/WhatsApp *",
     f_product_label: "Type de produit *",
     f_city_label: "Ville",
+    f_country_label: "Pays *",
     f_notes_label: "Note (optionnel)",
     f_consent: "J’accepte d’être contacté par WhatsApp/email *",
     f_submit: "Envoyer",
-    f_country_label: "Pays *",
     f_required: "* champs obligatoires",
-    footer_tag:"Sourcing fiable, QC, expédition & douane — contact WhatsApp simple.",
+
+    // FOOTER
+    footer_tag: "Sourcing fiable, QC, expédition & douane — contact WhatsApp simple.",
     footer_whatsapp: "WhatsApp :",
     footer_email: "Email :",
-    
   },
 };
 
-// ===== Helpers =====
+// ===== HELPERS =====
+function setErr(id, msg) {
+  const span = document.querySelector(`.err[data-for="${id}"]`);
+  if (span) span.textContent = msg;
+}
+
 function buildWhatsAppLink(data = {}, lang = DEFAULT_LANG) {
   const L = I18N[lang] || I18N[DEFAULT_LANG];
-  const {
-    name = "",
-    phone = "",
-    product = "",
-    city = "",
-    country = "",
-    notes = "",
-  } = data;
+  const { name = "", phone = "", product = "", city = "", country = "", notes = "" } = data;
 
-  // Message in the current language (short, structured)
   const parts = {
     ar: [
       "مرحبا، أرسلت طلب استيراد:",
@@ -258,24 +280,20 @@ function buildWhatsAppLink(data = {}, lang = DEFAULT_LANG) {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
 }
 
-
-function setErr(id, msg) {
-  const span = document.querySelector(`.err[data-for="${id}"]`);
-  if (span) span.textContent = msg;
-}
-
 function applyLang(lang) {
   const L = I18N[lang] || I18N[DEFAULT_LANG];
+
+  // html lang/dir
   document.documentElement.lang = L.lang;
   document.documentElement.dir = L.dir;
 
-  // Swap text for all [data-i18n] nodes
+  // swap all [data-i18n] texts
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
     if (L[key]) el.textContent = L[key];
   });
 
-  // Update placeholders (optional)
+  // placeholders
   const product = document.getElementById("product");
   if (product) {
     if (lang === "en") product.placeholder = "e.g., Home tools";
@@ -288,9 +306,12 @@ function applyLang(lang) {
     else if (lang === "fr") city.placeholder = "Ville";
     else city.placeholder = "";
   }
+
+  // persist selection
+  localStorage.setItem("lang", L.lang);
 }
 
-// ===== Nav (mobile) =====
+// ===== NAV (MOBILE) =====
 const hamburger = document.getElementById("hamburger");
 const navmenu = document.getElementById("navmenu");
 if (hamburger && navmenu) {
@@ -301,7 +322,7 @@ if (hamburger && navmenu) {
   });
 }
 
-// ===== WhatsApp buttons (blank message) =====
+// ===== WHATSAPP BUTTONS =====
 const directButtons = [
   document.getElementById("whatsapp-hero"),
   document.getElementById("whatsapp-cta"),
@@ -318,7 +339,7 @@ directButtons.forEach((el) => {
   el.setAttribute("href", `https://wa.me/${WHATSAPP_NUMBER}`);
 });
 
-// ===== Form → WhatsApp message (no backend email) =====
+// ===== FORM → WHATSAPP =====
 const form = document.getElementById("lead-form");
 if (form) {
   form.addEventListener("submit", (e) => {
@@ -329,39 +350,42 @@ if (form) {
     const phone = document.getElementById("phone").value.trim();
     const product = document.getElementById("product").value.trim();
     const city = document.getElementById("city").value.trim();
-    const country = document.getElementById("country").value.trim(); // NEW
+    const country = document.getElementById("country").value.trim();
     const notes = document.getElementById("notes").value.trim();
     const consent = document.getElementById("consent").checked;
 
-    // Clear errors
+    // clear errors
     document.querySelectorAll(".err").forEach((el) => (el.textContent = ""));
 
+    // basic validation
     let valid = true;
     if (!name) {
-      setErr("name", lang==="fr" ? "Entrez le nom" : lang==="en" ? "Enter name" : "من فضلك اكتب الاسم");
+      setErr("name", lang === "fr" ? "Entrez le nom" : lang === "en" ? "Enter name" : "من فضلك اكتب الاسم");
       valid = false;
     }
     if (!phone) {
-      setErr("phone", lang==="fr" ? "Entrez le téléphone" : lang==="en" ? "Enter phone" : "أدخل الهاتف");
+      setErr("phone", lang === "fr" ? "Entrez le téléphone" : lang === "en" ? "Enter phone" : "أدخل الهاتف");
       valid = false;
     }
     if (!product) {
-      setErr("product", lang==="fr" ? "Entrez le produit" : lang==="en" ? "Enter product" : "أدخل نوع المنتج");
+      setErr("product", lang === "fr" ? "Entrez le produit" : lang === "en" ? "Enter product" : "أدخل نوع المنتج");
       valid = false;
     }
-    if (!country) { // NEW
-      setErr("country", lang==="fr" ? "Entrez le pays" : lang==="en" ? "Enter country" : "أدخل الدولة");
+    if (!country) {
+      setErr("country", lang === "fr" ? "Entrez le pays" : lang === "en" ? "Enter country" : "أدخل الدولة");
       valid = false;
     }
     if (!consent) {
-      setErr("consent", lang==="fr" ? "Acceptez le contact" : lang==="en" ? "Please accept contact" : "الرجاء الموافقة");
+      setErr("consent", lang === "fr" ? "Acceptez le contact" : lang === "en" ? "Please accept contact" : "الرجاء الموافقة");
       valid = false;
     }
     if (!valid) return;
 
-    const wa = buildWhatsAppLink({ name, phone, product, city, country, notes }, lang); // include country
+    // open WhatsApp
+    const wa = buildWhatsAppLink({ name, phone, product, city, country, notes }, lang);
     window.open(wa, "_blank", "noopener");
 
+    // small confirmation
     const res = document.getElementById("form-result");
     if (res) {
       res.textContent =
@@ -371,21 +395,45 @@ if (form) {
           ? "Request sent. WhatsApp opened."
           : "تم الإرسال. تم فتح واتساب.";
     }
+
+    // reset form
     form.reset();
   });
 }
 
-
-// ===== Language Switcher =====
-// Language switcher (select)
+// ===== LANGUAGE SWITCHER (SELECT) =====
 const langSelect = document.getElementById("lang-select");
 if (langSelect) {
   langSelect.addEventListener("change", () => {
     applyLang(langSelect.value);
   });
-  // optional: sync UI with default/applyLang default
+  // sync UI with current language
   langSelect.value = document.documentElement.lang || langSelect.value;
 }
 
-// Init
-applyLang(DEFAULT_LANG);
+// ===== INITIAL LANGUAGE DETECTION =====
+function resolveInitialLang() {
+  const url = new URL(window.location.href);
+  const params = new URLSearchParams(url.search);
+
+  // 1) if ?lang=xx exists → override
+  const qpLang = (params.get("lang") || "").toLowerCase();
+  if (["ar", "en", "fr"].includes(qpLang)) {
+    localStorage.setItem("lang", qpLang);
+    return qpLang;
+  }
+
+  // 2) else, use saved preference
+  const saved = localStorage.getItem("lang");
+  if (["ar", "en", "fr"].includes(saved)) return saved;
+
+  // 3) fallback to default
+  return DEFAULT_LANG;
+}
+
+// ===== APPLY INITIAL LANGUAGE =====
+const initialLang = resolveInitialLang();
+applyLang(initialLang);
+
+// ===== SYNC SELECT WITH INITIAL =====
+if (langSelect) langSelect.value = initialLang;

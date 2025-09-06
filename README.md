@@ -70,7 +70,7 @@ Hosted on **Netlify** with zero maintenance. Push to GitHub, connected via Netli
 
 ---
 
-## 🔮 Possible Enhancements
+##  Possible Enhancements
 
 - Add **favicon** + og-image for better branding and link previews
 - Add **form input masking** for phone
@@ -81,7 +81,7 @@ Hosted on **Netlify** with zero maintenance. Push to GitHub, connected via Netli
 
 ---
 
-## ✅ Summary
+##  Summary
 
 HTT CARGO is a polished, minimal, multilingual landing page built the right way:
 -  Single, simple, static page
